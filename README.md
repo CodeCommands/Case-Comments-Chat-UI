@@ -1,18 +1,32 @@
-# Salesforce DX Project: Next Steps
+## Upgrade Case comments UI in Case Lightning-Record-Page and on Experience site!!
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+:atom: **Intutive Chat bubble UI**
 
-## How Do You Plan to Deploy Your Changes?
+![image](https://github.com/user-attachments/assets/2e91586c-353f-4aa0-ba05-41a351b871aa)
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
 
-## Configure Your Salesforce DX Project
+----- 
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+**Case Comment component have 2 properties**
 
-## Read All About It
+➡️ **Default User name** - Any value in this field will mask Internal user's name and replace it with provided value
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+➡️ **Record ID** - add {!recordid} as value when component is added to Experience site's Case detail page to mask internal user's name.
+
+----- 
+
+**On internal Lightning Record page**
+![image](https://github.com/user-attachments/assets/f832c881-3504-49c7-bf42-5bdf48b3f724)
+
+----- 
+
+
+
+**On Experience Site Case Detail page**
+![image](https://github.com/user-attachments/assets/3fb3d320-b150-46b7-a281-88f7f0e9ab25)
+
+----- 
+
+
+**On Experience Site Case Detail page - without masking internal user's name**
+![image](https://github.com/user-attachments/assets/109b19d2-71a5-4c4c-93bb-74a99193a8d2)
