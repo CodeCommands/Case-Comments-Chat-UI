@@ -1,0 +1,61 @@
+.comments-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.internal-comment, .external-comment {
+    margin: 10px 0;
+    display: flex;
+    width: 100%;
+}
+
+.internal-comment {
+    justify-content: flex-end; /* Align internal comments to the right */
+}
+
+.external-comment {
+    justify-content: flex-start; /* Align external comments to the left */
+}
+
+.chat-bubble {
+    padding: 10px;
+    border-radius: 15px;
+    display: inline-block;
+    width: 50%; /* Set chat bubble width to 50% */
+    background-color: #e0e0e0;
+    position: relative;
+    word-wrap: break-word;
+}
+
+.internal-comment .chat-bubble {
+    background-color: #536878; /* For internal users */
+    color: white; 
+}
+
+.external-comment .chat-bubble {
+    background-color: #e0e0e0; /* For external users */
+    color: black; 
+}
+
+.comment-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.user-name {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.comment-date {
+    font-size: 0.85rem;
+    color: inherit;
+}
+
+.comment-body {
+    margin-top: 5px;
+    font-size: 1rem;
+    word-wrap: break-word;
+}

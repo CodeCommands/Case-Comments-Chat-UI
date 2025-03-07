@@ -1,0 +1,15 @@
+<template>
+    <div class="comments-container">
+        <template for:each={caseComments} for:item="comment">
+            <div key={comment.Id} class={comment.commentClass}>
+                <div class="chat-bubble">
+                    <div class="comment-header">
+                        <span class="user-name">{comment.createdByName}</span>
+                        <span class="comment-date">{comment.formattedDate}</span>
+                    </div>
+                    <p class="comment-body">{comment.CommentBody}</p>
+                </div>
+            </div>
+        </template>
+    </div>
+</template>
